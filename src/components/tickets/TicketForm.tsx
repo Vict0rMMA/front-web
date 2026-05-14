@@ -48,8 +48,8 @@ export function TicketForm({ initial, onSubmit, onCancel }: Props) {
       {error && <div className="bg-red-50 text-red-600 text-sm rounded-xl px-4 py-3 border border-red-100">{error}</div>}
 
       <div>
-        <label className="block text-xs font-medium text-slate-600 mb-1.5">Título *</label>
-        <input type="text" value={form.title} onChange={(e) => set('title', e.target.value)} required className={inputCls} placeholder="Lotería de Medellín" />
+        <label className="block text-xs font-medium text-slate-600 mb-1.5">Nombre del sorteo *</label>
+        <input type="text" value={form.title} onChange={(e) => set('title', e.target.value)} required className={inputCls} placeholder="Ej: Lotería de Medellín" />
       </div>
 
       <div className="grid grid-cols-2 gap-3">
@@ -73,7 +73,7 @@ export function TicketForm({ initial, onSubmit, onCancel }: Props) {
           <input type="text" value={form.gameNumber} onChange={(e) => set('gameNumber', e.target.value)} className={inputCls} placeholder="1234" />
         </div>
         <div>
-          <label className="block text-xs font-medium text-slate-600 mb-1.5">Valor ($)</label>
+          <label className="block text-xs font-medium text-slate-600 mb-1.5">Valor apostado ($)</label>
           <input type="number" min="0" value={form.amount} onChange={(e) => set('amount', e.target.value)} className={inputCls} />
         </div>
       </div>
@@ -91,7 +91,7 @@ export function TicketForm({ initial, onSubmit, onCancel }: Props) {
 
       <div>
         <label className="block text-xs font-medium text-slate-600 mb-1.5">Notas</label>
-        <textarea value={form.notes} onChange={(e) => set('notes', e.target.value)} rows={3} className={`${inputCls} resize-none`} placeholder="Notas adicionales..." />
+        <textarea value={form.notes} onChange={(e) => set('notes', e.target.value)} rows={3} className={`${inputCls} resize-none`} placeholder="Premio a ganar, observaciones, etc." />
       </div>
 
       <div className="flex gap-3 pt-2">
