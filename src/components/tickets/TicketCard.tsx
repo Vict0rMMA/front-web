@@ -32,7 +32,7 @@ export function TicketCard({ ticket, index, onClick, onEdit, onDelete }: Props) 
           </div>
           <div className="min-w-0">
             <p className="text-sm font-semibold text-slate-900 truncate">{ticket.title}</p>
-            <p className="text-xs text-slate-400 mt-0.5">{ticket.gameType} · #{ticket.gameNumber}</p>
+            <p className="text-xs text-slate-400 mt-0.5">{ticket.gameType} · {ticket.gameNumber ? `#${ticket.gameNumber}` : 'Sin número'}</p>
           </div>
         </div>
         <StatusBadge status={ticket.status} />
