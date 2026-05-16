@@ -75,7 +75,7 @@ export default function TicketsPage() {
         <div className="relative flex-1 min-w-48">
           <Search size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
           <input type="text" value={search} onChange={(e) => setSearch(e.target.value)}
-            placeholder="Buscar por título o número..."
+            placeholder="Buscar por nombre o número jugado..."
             className="w-full border border-slate-200 rounded-xl pl-10 pr-4 py-2 text-sm text-slate-700 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all" />
         </div>
         <select value={filters.gameType} onChange={(e) => setFilters((f) => ({ ...f, page: 1, gameType: e.target.value as GameType | '' }))} className={selectCls}>
@@ -100,8 +100,8 @@ export default function TicketsPage() {
             <div className="w-14 h-14 rounded-2xl bg-slate-100 flex items-center justify-center mb-4">
               <TicketIcon size={24} className="text-slate-400" />
             </div>
-            <p className="text-slate-600 font-medium">No hay boletas</p>
-            <p className="text-sm text-slate-400 mt-1">Crea tu primera boleta con el botón de arriba</p>
+            <p className="text-slate-600 font-medium">Aún no tienes boletas registradas</p>
+            <p className="text-sm text-slate-400 mt-1">Presiona &quot;Nueva boleta&quot; para agregar tu primer registro</p>
           </motion.div>
         ) : (
           <div key="grid" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
