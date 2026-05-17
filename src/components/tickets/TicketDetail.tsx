@@ -20,7 +20,7 @@ export function TicketDetail({ id, onClose, onEdit }: Props) {
       {Array.from({ length: 4 }).map((_, i) => <div key={i} className="skeleton h-12 rounded-xl" />)}
     </div>
   );
-  if (!ticket) return <p className="text-center text-slate-400 py-8">No encontrado</p>;
+  if (!ticket) return <p className="text-center text-slate-400 py-8">No se encontró esta boleta</p>;
 
   return (
     <div className="space-y-4">
@@ -60,7 +60,7 @@ export function TicketDetail({ id, onClose, onEdit }: Props) {
 
       <div className="flex gap-3 pt-1">
         <button onClick={onClose} className="flex-1 border border-slate-200 text-slate-600 hover:border-slate-300 py-2.5 rounded-xl text-sm font-medium transition-colors">
-          Cerrar
+          Volver
         </button>
         <button onClick={onEdit} className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white py-2.5 rounded-xl text-sm font-semibold transition-colors flex items-center justify-center gap-2">
           <Pencil size={14} /> Editar
