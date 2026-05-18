@@ -67,7 +67,7 @@ export function Navbar() {
                   className="absolute right-0 mt-2 w-52 rounded-xl border border-slate-200 bg-white shadow-lg overflow-hidden z-50"
                 >
                   <div className="px-4 py-3 border-b border-slate-100">
-                    <p className="text-xs text-slate-400 mb-0.5">Sesión activa</p>
+                    <p className="text-xs text-slate-400 mb-0.5">Tu cuenta</p>
                     <p className="text-sm font-medium text-slate-800 truncate">{user?.email}</p>
                     {isAdmin && <span className="mt-1 inline-block text-xs font-semibold text-rose-600 bg-rose-50 px-2 py-0.5 rounded">Administrador</span>}
                   </div>
