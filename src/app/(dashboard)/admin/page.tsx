@@ -122,7 +122,7 @@ export default function AdminPage() {
             <ShieldCheck size={20} className="text-indigo-600" />
             <h1 className="text-2xl font-bold text-slate-900">Panel Admin</h1>
           </div>
-          <p className="text-sm text-slate-400">Vista global de todos los usuarios del sistema</p>
+          <p className="text-sm text-slate-400">Consulta y filtra todos los registros del sistema</p>
         </div>
         <span className="bg-indigo-50 text-indigo-700 text-xs font-semibold px-3 py-1.5 rounded-full border border-indigo-100">
           Administrador
