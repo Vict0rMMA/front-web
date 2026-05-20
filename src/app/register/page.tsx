@@ -50,7 +50,7 @@ export default function RegisterPage() {
             <span className="text-3xl">🎟️</span>
           </div>
           <h1 className="text-2xl font-bold text-slate-900">Mi Boleta</h1>
-          <p className="text-sm text-slate-400 mt-1">Nunca más olvides si ganaste</p>
+          <p className="text-sm text-slate-400 mt-1">Organiza todos tus sorteos en un solo lugar</p>
         </div>
 
         {/* Card */}
