@@ -14,119 +14,119 @@ interface Message {
 const RESPONSES: { keywords: string[]; answer: string }[] = [
   {
     keywords: ['hola', 'buenos dias', 'buenas tardes', 'buenas noches', 'buenas', 'hey', 'hi', 'saludos', 'ola'],
-    answer: 'Hola, bienvenido a Mi Boleta. Puedo ayudarte con informacion sobre loterías colombianas, precios, dias de sorteo y todo lo relacionado con la app. ¿En que te puedo ayudar?',
+    answer: 'Hola, ¿en que te puedo ayudar? Puedo contarte sobre loterías colombianas, precios, dias de sorteo o como usar la app.',
   },
   {
     keywords: ['medellin', 'medellín', 'loteria medellin', 'lotería medellín'],
-    answer: 'Lotería de Medellin\nSorteo: todos los viernes\nPrecio por fraccion: desde $5.000 COP\nPremio mayor: aproximadamente $3.500 millones COP\nManeja serie de 4 fracciones. Puedes registrar tu numero en Mi Boleta con estado Pendiente y actualizarlo cuando salga el resultado.',
+    answer: 'La Lotería de Medellin sortea todos los viernes. Cada fraccion cuesta desde $5.000 COP y el premio mayor ronda los $3.500 millones. Puedes guardar tu numero aqui en Mi Boleta con estado Pendiente y actualizarlo cuando salga el resultado.',
   },
   {
     keywords: ['bogota', 'bogotá', 'loteria bogota', 'lotería bogotá'],
-    answer: 'Lotería de Bogota\nSorteo: todos los jueves\nPrecio por fraccion: desde $5.000 COP\nPremio mayor: aproximadamente $3.500 millones COP\nNumeros de 4 cifras con serie. Registrala en Mi Boleta para no olvidar el numero.',
+    answer: 'La Lotería de Bogota sortea los jueves. El precio por fraccion es desde $5.000 COP y el premio mayor es de aproximadamente $3.500 millones. Son numeros de 4 cifras con serie.',
   },
   {
     keywords: ['tolima', 'loteria tolima', 'lotería tolima'],
-    answer: 'Lotería del Tolima\nSorteo: todos los lunes\nPrecio por fraccion: desde $5.000 COP\nPremio mayor: aproximadamente $2.500 millones COP\nPuedes guardarla en Mi Boleta y actualizarla el lunes con el resultado.',
+    answer: 'La Lotería del Tolima sortea los lunes desde $5.000 COP por fraccion. El premio mayor es de alrededor de $2.500 millones. Coincide el mismo dia con la de Cundinamarca.',
   },
   {
     keywords: ['cauca', 'loteria cauca', 'lotería cauca'],
-    answer: 'Lotería del Cauca\nSorteo: todos los sabados\nPrecio por fraccion: desde $4.000 COP\nPremio mayor: aproximadamente $2.000 millones COP',
+    answer: 'La Lotería del Cauca sortea los sabados. Cada fraccion cuesta desde $4.000 COP y el premio mayor es de aproximadamente $2.000 millones.',
   },
   {
     keywords: ['cundinamarca', 'loteria cundinamarca'],
-    answer: 'Lotería de Cundinamarca\nSorteo: todos los lunes\nPrecio por fraccion: desde $5.000 COP\nSortea el mismo dia que la del Tolima. Puedes registrar ambas en Mi Boleta.',
+    answer: 'La Lotería de Cundinamarca sortea los lunes, el mismo dia que la del Tolima. El precio por fraccion es desde $5.000 COP.',
   },
   {
     keywords: ['baloto', 'rebaloto'],
-    answer: 'Baloto\nSorteos: miercoles y sabados\nPrecio por apuesta: $3.500 COP\nPremio mayor: acumulado, puede superar los $20.000 millones\nSe escogen 5 numeros del 1 al 43 mas 1 baloto del 1 al 16\nRegistra tu combinacion en Mi Boleta como Juego ocasional para no perderla.',
+    answer: 'El Baloto sortea los miercoles y sabados. Cada apuesta vale $3.500 COP y se escogen 5 numeros del 1 al 43 mas un baloto del 1 al 16. El premio acumula y puede superar los $20.000 millones.',
   },
   {
     keywords: ['chance', 'chances'],
-    answer: 'Chance\nSorteos: cada dia en tres jornadas (manana, tarde y noche)\nPrecio minimo: $200 COP por combinacion\nModalidades: 3 cifras, 4 cifras, combinado y parlay\nPremio: hasta 4.500 veces lo apostado en 4 cifras\nEs el juego de mayor frecuencia en Colombia. Guarda tus apuestas en Mi Boleta bajo Juego ocasional.',
+    answer: 'El Chance sortea tres veces al dia, todos los dias. Puedes apostar desde $200 COP y hay modalidades de 3 cifras, 4 cifras, combinado y parlay. En 4 cifras el premio puede ser hasta 4.500 veces lo apostado.',
   },
   {
     keywords: ['superastro', 'super astro', 'astro'],
-    answer: 'SuperAstro\nSorteos: 5 veces al dia\nPrecio: desde $1.000 COP\nSe elige un numero del 00 al 99 mas un signo del zodiaco\nPremio: hasta $40.000.000 COP\nRegistralo en Mi Boleta como Sorteo para llevar el control.',
+    answer: 'El SuperAstro sortea 5 veces al dia. Se elige un numero del 00 al 99 mas un signo del zodiaco y el precio empieza desde $1.000 COP. El premio puede llegar hasta $40.000.000.',
   },
   {
     keywords: ['cruz roja', 'huila', 'risaralda', 'manizales', 'caldas', 'quindio', 'quindío', 'boyaca', 'boyacá', 'santander', 'meta', 'narino', 'nariño'],
-    answer: 'Loterias departamentales\nColombia tiene loterias en casi todos sus departamentos. El precio de cada fraccion varia entre $4.000 y $6.000 COP y los sorteos son semanales, de lunes a sabado segun el departamento.\nPuedes registrar cualquiera en Mi Boleta eligiendo Loteria como tipo de juego.',
+    answer: 'Esa es una loteria departamental. En Colombia casi todos los departamentos tienen su loteria con sorteo semanal. El precio de fraccion generalmente esta entre $4.000 y $6.000 COP. Puedes registrarla en Mi Boleta seleccionando Loteria como tipo de juego.',
   },
   {
     keywords: ['precio', 'precios', 'cuanto cuesta', 'cuánto cuesta', 'costo', 'valor', 'cuanto vale', 'cuánto vale', 'cuanto es', 'cuánto es'],
-    answer: 'Precios aproximados de juegos en Colombia:\n\nChance (3 cifras): desde $200 COP\nBaloto: $3.500 COP por apuesta\nSuperAstro: desde $1.000 COP\nLoterias departamentales (fraccion): entre $4.000 y $6.000 COP\nRifas empresariales: varia entre $5.000 y $50.000\n\nRegistra el valor exacto de cada boleta en Mi Boleta para llevar control de tu inversion.',
+    answer: 'Los precios aproximados son: Chance desde $200, Baloto $3.500 por apuesta, SuperAstro desde $1.000, loterias departamentales entre $4.000 y $6.000 por fraccion, y rifas depende del organizador. Cuando registres una boleta en la app puedes anotar el valor exacto que pagaste.',
   },
   {
     keywords: ['cuando es', 'cuándo es', 'que dia', 'qué día', 'dia de sorteo', 'dia sorteo', 'fecha sorteo', 'cuando sortea', 'cuándo sortea'],
-    answer: 'Dias de sorteo en Colombia:\n\nLunes: Tolima, Cundinamarca\nMartes: Boyaca\nMiercoles: Baloto, Cruz Roja\nJueves: Bogota, Huila\nViernes: Medellin, Meta\nSabado: Cauca, Baloto, Risaralda\nTodos los dias: Chance y SuperAstro\n\n¿Quieres informacion de una loteria en particular?',
+    answer: 'Los dias de sorteo son: lunes Tolima y Cundinamarca, martes Boyaca, miercoles Baloto y Cruz Roja, jueves Bogota y Huila, viernes Medellin y Meta, sabado Cauca y Risaralda. El Chance y el SuperAstro sortean todos los dias. ¿Te interesa alguna en particular?',
   },
   {
     keywords: ['premio', 'premios', 'cuanto gano', 'cuánto gano', 'cuanto paga', 'cuánto paga', 'pago', 'paga'],
-    answer: 'Premios aproximados:\n\nLoterias departamentales: entre $2.500 y $4.000 millones COP al mayor\nBaloto: acumulado, puede superar $30.000 millones\nChance 4 cifras: hasta 4.500 veces lo apostado\nSuperAstro: hasta $40.000.000 COP\nRifas: depende del organizador\n\nTen en cuenta que los premios de loteria tienen retencion en la fuente del 20% aproximadamente.',
+    answer: 'Los premios mayores de loterias departamentales estan entre $2.500 y $4.000 millones. El Baloto acumula y puede superar $30.000 millones. El Chance en 4 cifras paga hasta 4.500 veces lo apostado y el SuperAstro hasta $40.000.000. Ten en cuenta que los premios de loteria tienen retencion en la fuente del 20%.',
   },
   {
     keywords: ['crear', 'nueva boleta', 'agregar', 'registrar', 'añadir', 'guardar boleta', 'como agrego', 'como registro'],
-    answer: 'Para registrar una boleta:\n1. Haz clic en el boton Nueva boleta (parte superior derecha)\n2. Completa el titulo, tipo de juego, numero, fecha del sorteo y valor apostado\n3. Selecciona el estado Pendiente\n4. Guarda el formulario\n\nDespues del sorteo puedes editarla y cambiar el estado a Ganado o Perdido.',
+    answer: 'Haz clic en el boton "Nueva boleta" arriba a la derecha, completa los datos del juego y guarda con estado Pendiente. Cuando salga el resultado lo editas y cambias el estado a Ganado o Perdido.',
   },
   {
     keywords: ['editar', 'modificar', 'actualizar', 'cambiar estado', 'cambiar boleta'],
-    answer: 'Para editar una boleta:\nPasa el cursor sobre la tarjeta y haz clic en el icono del lapiz que aparece.\nSe abre el formulario donde puedes cambiar cualquier campo, incluido el estado segun el resultado del sorteo.\nGuarda los cambios cuando termines.',
+    answer: 'Pasa el cursor sobre la tarjeta de la boleta y aparece el icono del lapiz. Al hacer clic se abre el formulario donde puedes cambiar cualquier campo, incluido el estado.',
   },
   {
     keywords: ['eliminar', 'borrar', 'delete', 'quitar', 'remover'],
-    answer: 'Para eliminar una boleta:\nPasa el cursor sobre la tarjeta y haz clic en el icono de papelera.\nConfirma la accion en el cuadro de dialogo.\nTen en cuenta que esta accion no se puede deshacer.',
+    answer: 'Pasa el cursor sobre la tarjeta y haz clic en el icono de papelera. Te pide confirmacion antes de borrar. Una vez eliminada no se puede recuperar.',
   },
   {
     keywords: ['filtro', 'filtros', 'buscar', 'busqueda', 'búsqueda', 'busco', 'encontrar'],
-    answer: 'Para filtrar tus boletas:\nUsa la barra de busqueda para encontrar por titulo o numero de boleta.\nPuedes filtrar por tipo de juego: Loteria, Rifa, Sorteo, Boleta o Juego ocasional.\nTambien puedes filtrar por estado: Pendiente, Ganado o Perdido.\nLos filtros se pueden combinar entre si.',
+    answer: 'Arriba de la lista tienes una barra de busqueda para encontrar por titulo o numero, y dos selectores para filtrar por tipo de juego y por estado. Puedes combinarlos como quieras.',
   },
   {
     keywords: ['estado', 'estados', 'pendiente', 'ganado', 'perdido'],
-    answer: 'Estados disponibles para una boleta:\n\nPendiente: el sorteo aun no ha ocurrido o no conoces el resultado todavia.\nGanado: obtuviste el premio. Puedes anotar el monto en las notas de la boleta.\nPerdido: el sorteo ya paso y no fue ganador.\n\nPuedes cambiar el estado en cualquier momento editando la boleta.',
+    answer: 'Cada boleta tiene tres estados posibles: Pendiente cuando aun no sabes el resultado, Ganado si obtuviste el premio, y Perdido si no salio. Puedes cambiarlo en cualquier momento editando la boleta.',
   },
   {
     keywords: ['admin', 'administrador', 'panel admin', 'vista admin', 'todos los tickets'],
-    answer: 'Panel de administracion:\nDisponible unicamente para usuarios con rol de administrador.\nMuestra todos los tickets registrados en el sistema, de todos los usuarios.\nIncluye estadisticas globales: total de boletas, ganadas, pendientes y perdidas.\nPermite filtrar por tipo, estado y buscar por nombre de usuario o correo.\nSe accede desde el menu Admin en la barra superior.',
+    answer: 'El panel de administracion es exclusivo para el usuario admin. Desde ahi se pueden ver todas las boletas de todos los usuarios con estadisticas globales, y se puede filtrar o buscar por cualquier campo incluyendo el nombre o correo del dueno.',
   },
   {
     keywords: ['cerrar sesion', 'cerrar sesión', 'salir', 'logout', 'desconectar'],
-    answer: 'Para cerrar sesion:\nHaz clic en tu nombre o inicial en la esquina superior derecha.\nEn el menu desplegable selecciona Cerrar sesion.\nSeras redirigido a la pantalla de inicio de sesion.',
+    answer: 'Haz clic en tu nombre o inicial en la esquina superior derecha y selecciona Cerrar sesion en el menu que aparece.',
   },
   {
     keywords: ['registrar cuenta', 'crear cuenta', 'nueva cuenta', 'registrarme', 'como me registro', 'signup', 'register'],
-    answer: 'Para crear una cuenta:\nEntra a la pantalla de inicio de sesion y haz clic en Registrate.\nCompleta tu nombre, correo electronico y contraseña.\nUna vez registrado puedes iniciar sesion de inmediato.',
+    answer: 'En la pantalla de inicio de sesion hay un enlace que dice Registrate al final del formulario. Solo necesitas nombre, correo y contraseña.',
   },
   {
     keywords: ['contrasena', 'contraseña', 'password', 'clave', 'olvide', 'olvidé'],
-    answer: 'Sobre la contraseña:\nDebe tener minimo 6 caracteres.\nSi la olvidaste, contacta al administrador del sistema para restablecerla.\nNo compartas tus credenciales con otras personas.',
+    answer: 'La contraseña debe tener minimo 8 caracteres. Si la olvidaste necesitas contactar al administrador del sistema para que te la restablezca.',
   },
   {
     keywords: ['que es', 'qué es', 'para que sirve', 'para qué sirve', 'sobre la app', 'informacion de la app'],
-    answer: 'Mi Boleta es una plataforma para registrar y gestionar tus participaciones en juegos de azar.\n\nTe permite:\nRegistrar loterías, rifas, chances y sorteos en un solo lugar.\nLlevar el control de cuanto has invertido.\nActualizar el resultado de cada boleta cuando sale el sorteo.\nBuscar y filtrar entre todas tus participaciones.\nConsultar tu historial completo.',
+    answer: 'Mi Boleta es una app para registrar todas tus participaciones en sorteos, loterias y rifas en un solo lugar. Puedes llevar el control de cuanto has apostado, en que fechas y si ganaste o no, sin tener que recordar cada detalle.',
   },
   {
     keywords: ['tipos de juego', 'tipo juego', 'loteria', 'lotería', 'rifa', 'sorteo', 'juego ocasional', 'tipo de boleta'],
-    answer: 'Tipos de juego disponibles en Mi Boleta:\n\nLotería: loterías departamentales como Medellin, Bogota, Tolima, etc.\nRifa: rifas empresariales o beneficas con boleta numerada.\nSorteo: sorteos puntuales con premio definido.\nBoleta: registro generico de participacion.\nJuego ocasional: Baloto, Chance, SuperAstro y similares.\n\nElige el tipo que mas se ajuste al juego que quieres registrar.',
+    answer: 'La app maneja cinco tipos: Lotería para loterías departamentales, Rifa para rifas con boleta numerada, Sorteo para sorteos con premio fijo, Boleta para casos generales, y Juego ocasional para Baloto, Chance o SuperAstro. Elige el que mejor describa lo que compraste.',
   },
   {
     keywords: ['gane', 'gané', 'gano', 'gano algo', 'creo que gane', 'me gané'],
-    answer: 'Si ganaste, edita la boleta y cambia el estado a Ganado.\nPuedes escribir el monto del premio en el campo de notas.\nRecuerda reclamar el premio dentro del plazo legal, que para loterias es generalmente de un año.\nLos premios de loteria tienen retencion en la fuente de aproximadamente el 20%.',
+    answer: 'Edita la boleta y cambia el estado a Ganado. Puedes anotar el monto del premio en el campo de notas. Recuerda que tienes hasta un año para reclamar el premio en loterias y que aplica retencion en la fuente del 20%.',
   },
   {
     keywords: ['perdi', 'perdí', 'no gane', 'no gané', 'no salio', 'no me gane'],
-    answer: 'Edita la boleta y cambia el estado a Perdido para mantener tu historial organizado.\nEn Mi Boleta puedes revisar cuanto llevas invertido y cuantas veces has participado en cada tipo de juego.',
+    answer: 'Edita la boleta y marcala como Perdida para mantener el historial al dia. Desde la app puedes ver cuanto llevas invertido en total por tipo de juego.',
   },
   {
     keywords: ['pagina', 'página', 'paginacion', 'paginación', 'mas boletas', 'ver mas'],
-    answer: 'Las boletas se muestran de 20 en 20 por pagina.\nUsa los botones Anterior y Siguiente al final de la lista para navegar.\nEn el panel de administracion puedes cambiar la cantidad por pagina entre 20, 50 o 100.',
+    answer: 'Las boletas se cargan de 20 en 20. Usa los botones de navegacion al final de la lista para moverte entre paginas.',
   },
   {
     keywords: ['ayuda', 'help', 'soporte', 'error', 'problema', 'no funciona', 'falla'],
-    answer: 'Si tienes un problema con la app:\nVerifica que tu conexion a internet este funcionando.\nIntenta cerrar sesion y volver a ingresar.\nRecarga la pagina si algo no carga correctamente.\nSi el error persiste, contacta al administrador del sistema con una descripcion de lo que esta ocurriendo.',
+    answer: 'Si algo no funciona bien, intenta recargar la pagina o cerrar sesion y volver a entrar. Si el problema continua, describeme que esta pasando e intento orientarte.',
   },
   {
     keywords: ['gracias', 'thanks', 'perfecto', 'listo', 'ok gracias', 'muchas gracias', 'muy bien', 'genial', 'excelente', 'chevere'],
-    answer: 'Con gusto. Si tienes otra pregunta sobre la app o sobre algun juego, aqui estoy.',
+    answer: 'Con gusto. Cualquier otra duda me dices.',
   },
 ];
 
@@ -142,7 +142,7 @@ function getResponse(text: string): string {
     if (score > best.score) best = { score, answer: r.answer };
   }
   if (best.score > 0) return best.answer;
-  return 'No tengo informacion exacta sobre eso. Puedo ayudarte con:\n\nLoterias colombianas: Medellin, Bogota, Tolima, Baloto, Chance...\nPrecios y dias de sorteo de cada juego\nComo registrar, editar o eliminar boletas en la app\nEstados de boletas y panel de administracion\n\n¿Sobre que quieres saber?';
+  return 'No tengo informacion sobre eso. Puedes preguntarme por loterias colombianas como Medellin, Bogota o Baloto, por los precios y dias de sorteo, o sobre como usar la app.';
 }
 
 function now() {
@@ -150,8 +150,8 @@ function now() {
 }
 
 const INITIAL: Message[] = [
-  { id: 1, from: 'bot', text: 'Hola, soy el asistente de Mi Boleta.', time: now() },
-  { id: 2, from: 'bot', text: 'Puedo ayudarte con informacion sobre loterias colombianas, precios, dias de sorteo y como usar la aplicacion. ¿En que te puedo ayudar?', time: now() },
+  { id: 1, from: 'bot', text: 'Hola, ¿en que te puedo ayudar?', time: now() },
+  { id: 2, from: 'bot', text: 'Puedo contarte sobre loterias colombianas, precios, dias de sorteo o como usar la app.', time: now() },
 ];
 
 export function ChatBot() {
